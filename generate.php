@@ -7,10 +7,25 @@
 
 $website_url = 'http://www.addictradio.net/';
 $stream_title = 'Addict Radio Rock';
-$stream_url = array("stream1.addictradio.net/addictrock.mp3","stream3.addictradio.net/addictrock.mp3");
+
+$stream_url = array(
+    "stream1.addictradio.net/addictrock.mp3",
+    "stream2.addictradio.net/addictrock.mp3",
+    "stream3.addictradio.net/addictrock.mp3",
+    "stream4.addictradio.net/addictrock.mp3",
+    "stream5.addictradio.net/addictrock.mp3",
+    "stream6.addictradio.net/addictrock.mp3"
+);
+
 $filename = "addictrock";
 $format = array('asx','m3u','pls','qtl','wax');
-$ext = $format[1]; //m3u
+
+//default format m3u
+$ext = $format[1];
+
+if(isset($_GET['ext']) && $_GET['ext'] && in_array(strtolower($_GET['ext']),$format)) {
+    $ext = strtolower($_GET['ext']);
+}
 
 switch($ext) {
     case 'asx':
@@ -51,7 +66,7 @@ switch($ext) {
         break;
     case 'wax':
         header("Content-Type: audio/x-ms-wax");
-        header("Content-Disposition: attachment; filename=playlist.$ext");
+        header("Content-Disposition: attachment; filename=$filename.$ext");
         foreach($stream_url as $url) {
             echo "$url\n";
         }
