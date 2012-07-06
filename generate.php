@@ -1,13 +1,15 @@
 <?php
 /*
  * Playlist generator
- * Author: François LASSERRE - http://www.choiz.fr
- * Licence: GPL - http://www.gnu.org/copyleft/gpl.html
+ *
+ * @version 2012-07-06T21:50:20Z (ISO-8601)
+ * @author François LASSERRE <choiz@me.com>·
+ * @license GNU GPL {@link http://www.gnu.org/licenses/gpl.html}
  */
 
 $available_format = array('asx','m3u','pls','qtl','wax');
 
-$radio = new StdObject;
+$radio = new stdClass;
 $radio->website_url = "http://www.addictradio.net/";
 $radio->stream_title = "Addict Radio Rock";
 $radio->station = "addictrock";
@@ -20,7 +22,7 @@ $radio->stream_url = array(
     "stream6.addictradio.net/".$radio->station.".mp3",
 );
 
-$file = new StdObject;
+$file = new stdClass;
 $file->name = $radio->station;
 $file->ext = $available_format[1];
 
