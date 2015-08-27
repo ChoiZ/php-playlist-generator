@@ -26,7 +26,7 @@ $file = new stdClass;
 $file->name = $radio->station;
 $file->ext = $available_format[1];
 
-if (isset($_GET['ext']) && $_GET['ext'] && in_array(strtolower($_GET['ext']),$format)) {
+if (isset($_GET['ext']) && $_GET['ext'] && in_array(strtolower($_GET['ext']), $available_format)) {
     $file->ext = strtolower($_GET['ext']);
 }
 
