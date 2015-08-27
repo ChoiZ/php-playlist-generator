@@ -2,7 +2,7 @@
 /*
  * Playlist generator
  *
- * @version 2014-07-23
+ * @version 2015-08-27
  * @author François LASSERRE <choiz@me.com>
  * @license GNU GPL {@link http://www.gnu.org/licenses/gpl.html}
  */
