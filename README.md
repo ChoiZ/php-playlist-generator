@@ -1,7 +1,7 @@
 php-playlist-generator
 ======================
 
-Generate playlist file for audio streaming servers (like: icecast or shoutcast_).
+Generate playlist file for audio streaming servers (like: icecast or shoutcast).
 
 You can create many kind of files:
 
