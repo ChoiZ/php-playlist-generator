@@ -1,10 +1,10 @@
 php-playlist-generator
 ======================
 
-This script is used for generating playlist files on demand with an audio streaming server.
+Generate playlist file for audio streaming servers (like: icecast or shoutcast_).
 
-Php playlist generator can create many kind of files like:
+You can create many kind of files:
 
-- winamp / macamp / itunes / xmms (ext: .m3u or .pls)
-- quicktime (ext: .qtl)
-- windows media player (ext: .asx or .wax)
+- winamp / macamp / itunes / vlc / xmms (extension: .m3u or .pls)
+- quicktime (extension: .qtl)
+- windows media player (extension: .asx or .wax)
