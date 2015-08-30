@@ -17,6 +17,9 @@ class Playlist
         'wax' => 'audio/x-ms-wax'
     );
 
+    private $station;
+    private $extension;
+
     public function __construct(Station $station, $extension = 'm3u')
     {
         $this->station = $station;
